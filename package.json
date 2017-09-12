@@ -1,0 +1,19 @@
+{
+  "name": "validate-norwegian-ssn",
+  "version": "1.0.0",
+  "description": "Validates norwegian SSN numbers (fødelsnummer)",
+  "main": "validate-norwegian-ssn.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andersevenrud/validate-norwegian-ssn.git"
+  },
+  "author": "Anders Evenrud <andersevenrud@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andersevenrud/validate-norwegian-ssn/issues"
+  },
+  "homepage": "https://github.com/andersevenrud/validate-norwegian-ssn#readme"
+}
