@@ -34,8 +34,8 @@
     var mm = Number(str.substr(2, 2)) - 1;
     var dd = Number(str.substr(0, 2));
     newdate.setFullYear(yyyy);
-    newdate.setMonth(mm);
     newdate.setDate(dd);
+    newdate.setMonth(mm);
 
     return dd === newdate.getDate() && mm === newdate.getMonth() && yyyy === newdate.getFullYear();
   }
