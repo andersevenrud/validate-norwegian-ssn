@@ -1,6 +1,6 @@
 {
   "name": "validate-norwegian-ssn",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Validates norwegian SSN numbers (fødelsnummer)",
   "main": "validate-norwegian-ssn.js",
   "scripts": {
