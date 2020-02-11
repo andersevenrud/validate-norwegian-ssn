@@ -29,15 +29,12 @@
   'use strict';
 
   function isValidDate(str) {
-    var newdate = new Date();
     var yyyy = 2000 + Number(str.substr(4, 2));
-    var mm = Number(str.substr(2, 2)) - 1;
+    var mm = Number(str.substr(2, 2));
     var dd = Number(str.substr(0, 2));
-    newdate.setFullYear(yyyy);
-    newdate.setDate(dd);
-    newdate.setMonth(mm);
+    var newdate = new Date(`${yyyy}-${mm}-${dd}`);
 
-    return dd === newdate.getDate() && mm === newdate.getMonth() && yyyy === newdate.getFullYear();
+    return dd === newdate.getDate() && (mm - 1) === newdate.getMonth() && yyyy === newdate.getFullYear();
   }
 
   /**
