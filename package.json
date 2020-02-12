@@ -1,10 +1,11 @@
 {
   "name": "validate-norwegian-ssn",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Validates norwegian SSN numbers (fødelsnummer)",
-  "main": "validate-norwegian-ssn.js",
+  "main": "dist/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,17 @@
   "bugs": {
     "url": "https://github.com/andersevenrud/validate-norwegian-ssn/issues"
   },
-  "homepage": "https://github.com/andersevenrud/validate-norwegian-ssn#readme"
+  "homepage": "https://github.com/andersevenrud/validate-norwegian-ssn#readme",
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  }
 }
