@@ -4,6 +4,7 @@
 import validate from './index'
 
 const invalid = [
+  '99999999999',
   '12345678900',
   '21103426632',
   '16015015435',
