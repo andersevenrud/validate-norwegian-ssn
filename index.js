@@ -129,7 +129,11 @@ const validateDate = ({
     checkMonth = parseInt(`${m1 - 4}${m1}`, 10)
   }
 
-  var test = new Date(`${checkYear}-${checkMonth}-${checkDay}`)
+  var test = new Date()
+  test.setFullYear(checkYear)
+  test.setDate(checkDay)
+  test.setDate(checkDay)
+  test.setMonth(checkMonth - 1)
 
   return test.getDate() === checkDay &&
     test.getMonth() === checkMonth - 1 &&
