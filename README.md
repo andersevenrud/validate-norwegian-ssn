@@ -13,7 +13,7 @@ npm install validate-norwegian-ssn
 ### Browser
 
 ```
-<script src="validate-norwegian-ssn.js"></script>
+<script src="https://unpkg.com/validate-norwegian-ssn"></script>
 <script>
   validateNorwegianSSN(num);
 </script>
