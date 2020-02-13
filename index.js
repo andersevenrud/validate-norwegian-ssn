@@ -113,16 +113,21 @@ const validateDate = ({
   month,
   year,
   d1,
+  d2,
   m1,
   isHnumber,
   isDnumber
 }, dnumber, hnumber) => {
+  if (isHnumber && isDnumber) {
+    return true
+  }
+
   let checkDay = parseInt(day, 10)
   let checkMonth = parseInt(month, 10)
   let checkYear = 2000 + parseInt(year, 10)
 
   if (isDnumber && dnumber) {
-    checkDay = d1 - 4
+    checkDay = parseInt(`${d1 - 4}${d2}`, 10)
   }
 
   if (isHnumber && hnumber) {
