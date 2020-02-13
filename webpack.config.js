@@ -9,6 +9,8 @@ module.exports = {
   },
   output: {
     path: path.join(__dirname, 'dist'),
+    globalObject: 'this',
+    libraryExport: 'default',
     library: 'validateNorwegianSSN',
     libraryTarget: 'umd'
   },

@@ -3,6 +3,13 @@
   "version": "1.0.4",
   "description": "Validates norwegian SSN numbers (fødelsnummer)",
   "main": "dist/main.js",
+  "files": [
+    "dist/main.js",
+    "dist/main.js.map",
+    "index.js",
+    "index.test.js",
+    "README.md"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
